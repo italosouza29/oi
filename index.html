@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aluguel de Festas - Pegue e Monte</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  
+<aside class="aside">
+  <a href="#" id="Introdução">Introdução</a>
+  <a href="#" id="Sobre">Sobre</a>
+  <a href="#" id="Contato">Contato</a>
+</aside>
+
+
+  <header>
+    <h1>🎉 Pegue e Monte Sua Festa</h1>
+    <p>Monte seu evento do seu jeito. Escolha e alugue os itens que quiser!</p>
+  </header>
+
+  <main>
+    <section class="produtos">
+      <div class="produto">
+        <img src="mesa.jpg" alt="Mesa decorada"/>
+        <h3>Mesa decorada</h3>
+        <p>R$ 120,00</p>
+        <button onclick="adicionarAoCarrinho('Mesa decorada', 120)">Alugar</button>
+      </div>
+
+      <div class="produto">
+        <img src="balão.jpg" alt="Arco de balões"/>
+        <h3>Arco de Balões</h3>
+        <p>R$ 80,00</p>
+        <button onclick="adicionarAoCarrinho('Arco de Balões', 80)">Alugar</button>
+      </div>
+
+      <div class="produto">
+        <img src="caixa.jpg" alt="Caixa de som"/>
+        <h3>Caixa de Som</h3>
+        <p>R$ 150,00</p>
+        <button onclick="adicionarAoCarrinho('Caixa de Som', 150)">Alugar</button>
+      </div>
+    </section>
+
+    <section class="carrinho">
+      <h2>🛒 Carrinho</h2>
+      <ul id="lista-carrinho"></ul>
+      <p id="total">Total: R$ 0,00</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Pegue e Monte Festas</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

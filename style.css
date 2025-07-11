@@ -1,0 +1,109 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  color: #333;
+}
+
+header {
+  background: #ff4081;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+
+.aside {
+  position: relative;
+  height: 200px; 
+}
+
+.aside a {
+  position: absolute;
+  left: -90px;
+  transition: 0.2s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 0 15px 15px 0;
+}
+
+.aside a:hover {
+  left: 0;
+}
+
+#Introdução {
+  top: 20px;
+  background-color: #800;
+}
+
+#Sobre {
+  top: 80px;
+  background-color: #080;
+}
+
+#Contato {
+  top: 140px;
+  background-color: #008;
+}
+
+
+
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.produto {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 10px;
+  width: 250px;
+  text-align: center;
+}
+
+.produto img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+button {
+  background: #ff4081;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e91e63;
+}
+
+.carrinho {
+  margin-top: 40px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  background: #ddd;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}
