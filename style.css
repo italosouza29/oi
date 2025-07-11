@@ -25,7 +25,7 @@ main {
 
 .aside a {
   position: absolute;
-  left: -90px;
+  left: -10px;
   transition: 0.2s;
   padding: 15px;
   width: 100px;
