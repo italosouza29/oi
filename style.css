@@ -56,37 +56,6 @@ main {
 }
 
 
-.img-canto {
-  position: fixed;    
-  width: 100px;       
-  z-index: 10;         
-}
-
-
-.topo-esquerdo {
-  top: 0;
-  left: 0;
-}
-
-
-.topo-direito {
-  top: 0;
-  right: 0;
-}
-
-
-.baixo-esquerdo {
-  bottom: 0;
-  left: 0;
-}
-
-
-.baixo-direito {
-  bottom: 0;
-  right: 0;
-}
-
-
 .produtos {
   display: flex;
   flex-wrap: wrap;
