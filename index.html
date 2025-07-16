@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Aluguel de Festas - Pegue e Monte</title>
   <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
 
   <style>
     .whatsapp-link {
@@ -27,10 +27,6 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
-
-
-    
-
     .whatsapp-link i {
       font-size: 24px;
     }
@@ -40,27 +36,21 @@
       50%      { transform: translateY(-4px); }
     }
 
-
     .button {
-  padding: 10px 20px;
-  font-size: 18px;
-  background-color: #ff6600;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  margin-top: 20px;
-}
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #ff6600;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
 
-.contador {
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-
-
-
-    
+    .contador {
+      font-size: 18px;
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
@@ -69,25 +59,23 @@
     <i class="fa fa-whatsapp"></i>
     Fale Conosco
   </a>
-<div class="decoracoes">
-    
-   </div>
 
-<header class="header-site">
+  <div class="decoracoes"></div>
+
+  <header class="header-site">
     <h1>🎉 Pegue e Monte Sua Festa</h1>
     <p>Monte seu evento do seu jeito. Escolha e alugue os itens que quiser!</p>
 
-<aside class="aside">
-    <a href="#" id="Introdução">Introdução</a>
-    <a href="#" id="Sobre">Sobre</a>
-    <a href="#" id="Contato">Contato</a>
-  </aside>
-
-</header>
-
+    <aside class="aside">
+      <a href="#" id="Introdução">Introdução</a>
+      <a href="#" id="Sobre">Sobre</a>
+      <a href="#" id="Contato">Contato</a>
+    </aside>
+  </header>
 
   <main>
-    <input type="button" value="Enviar" id="botão-clicar" class="button" />
+    
+    <input type="button" value="Enviar" id="botao-clicar" class="button" />
     <p id="contador-texto" class="contador">Você clicou 0 vezes.</p>
     
     <section class="produtos">
@@ -124,9 +112,7 @@
     <p>&copy; 2025 - Pegue e Monte Festas</p>
   </footer>
 
-  <script src="script.js"></script>
-
-     <script>
+  <script>
     let contador = 0;
     const cores = ["#FFCCCC", "#CCE5FF", "#CCFFCC", "#FFFFCC", "#E5CCFF"];
     let corAtual = 0;
@@ -138,10 +124,12 @@
       if (contador % 10 === 0) {
         corAtual = (corAtual + 1) % cores.length;
         document.body.style.backgroundColor = cores[corAtual];
-      }
+    }
     });
   </script>
 
-<script src="script.js"></script>
+ 
+  <script src="script.js"></script>
 </body>
 </html>
+
