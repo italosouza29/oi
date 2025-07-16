@@ -46,9 +46,9 @@
     font-size: 18px;
     background-color: #ff6600;
     color: white;
-    boder: none;
-    boder-radius: 10px;
-    curtor: pointer;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
     margin-top: 20px;
     }
 
@@ -79,7 +79,7 @@
 </html>
 
  <body>
-   < imput type =" button " value = "enviar"> 
+   <input type="button" value= "enviar" id="botao-clicar" class="button" />
 
   <div class="decoracoes">
     
@@ -141,10 +141,10 @@
        const color = ["#FFCCCC", "#CCE5FF", "#CCFFCC", "#FFFFCC", "#E5CCFF"];
        let coloratual = 0;
 
-       document.getElementById("botão-clicar").addEventListener(click", funcition () {
+       document.getElementById("botão-clicar").addEventListener("click", funcition () {
        contador++; 
 
-          document.getElementById("Contador-texto").innerText = Voce clicou ${contandor} vez${contador === 1 ? ' ' :  'es' }. ;
+          document.getElementById("Contador-texto").innerText = `Você clicou ${contador} vez${contador === 1 ? '' : 'es'}.`;
 
          if (contador % 10 === 0 )
          corAtual = (CorAtual + 1) 5 cores.length;
