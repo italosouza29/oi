@@ -69,12 +69,7 @@
     <i class="fa fa-whatsapp"></i>
     Fale Conosco
   </a>
-
-</body>
-  
-</html>
-
- <div class="decoracoes">
+<div class="decoracoes">
     
    </div>
 
@@ -132,21 +127,21 @@
   <script src="script.js"></script>
 
      <script>
-       let contador = 0;
-       const cores = ["#FFCCCC", "#CCE5FF", "#CCFFCC", "#FFFFCC", "#E5CCFF"];
-       let corAtual = 0;
+    let contador = 0;
+    const cores = ["#FFCCCC", "#CCE5FF", "#CCFFCC", "#FFFFCC", "#E5CCFF"];
+    let corAtual = 0;
 
-       document.getElementById("botão-clicar").addEventListener("click", function () {
-       contador++; 
+    document.getElementById("botao-clicar").addEventListener("click", function () {
+      contador++;
+      document.getElementById("contador-texto").innerText = `Você clicou ${contador} vez${contador === 1 ? '' : 'es'}.`;
 
-          document.getElementById("contador-texto").innerText = `Você clicou ${contador} vez${contador === 1 ? '' : 'es'}.`;
+      if (contador % 10 === 0) {
+        corAtual = (corAtual + 1) % cores.length;
+        document.body.style.backgroundColor = cores[corAtual];
+      }
+    });
+  </script>
 
-         if (contador % 10 === 0 )
-         corAtual = (corAtual + 1) 5 cores.length;
-          document.body.style.backgroundColor = cores[corAtual];
-       }
-       });
-       
-     </script>
+<script src="script.js"></script>
 </body>
 </html>
