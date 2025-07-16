@@ -27,6 +27,10 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
+
+
+    
+
     .whatsapp-link i {
       font-size: 24px;
     }
@@ -35,6 +39,32 @@
       0%, 100% { transform: translateY(0); }
       50%      { transform: translateY(-4px); }
     }
+
+
+    .button   {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff6600;
+    color: white;
+    boder: none;
+    boder-radius: 10px;
+    curtor: pointer;
+    margin-top: 20px;
+    }
+
+    .contador  {
+    font-size: 18px;
+    margin-top: 10px;
+    }
+      
+    
+    
+    
+
+
+
+
+    
   </style>
 </head>
 <body>
@@ -105,5 +135,23 @@
   </footer>
 
   <script src="script.js"></script>
+
+     <script>
+       let contador = 0;
+       const color = ["#FFCCCC", "#CCE5FF", "#CCFFCC", "#FFFFCC", "#E5CCFF"];
+       let coloratual = 0;
+
+       document.getElementById("botão-clicar").addEventListener(click", funcition () {
+       contador++; 
+
+          document.getElementById("Contador-texto").innerText = Voce clicou ${contandor} vez${contador === 1 ? ' ' :  'es' }. ;
+
+         if (contador % 10 === 0 )
+         corAtual = (CorAtual + 1) 5 cores.length;
+          document.body.style.backgroundColor = cores[corAtual];
+       }
+       });
+       
+     </script>
 </body>
 </html>
