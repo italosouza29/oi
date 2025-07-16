@@ -74,13 +74,9 @@
   
 </html>
 
- <body>
-   <input type="button" value= "enviar" id="botao-clicar" class="button" />
-
-  <div class="decoracoes">
+ <div class="decoracoes">
     
-   
-  </div>
+   </div>
 
 <header class="header-site">
     <h1>🎉 Pegue e Monte Sua Festa</h1>
@@ -96,7 +92,7 @@
 
 
   <main>
-    <input type="button" value="Enviar" id="botao-clicar" class="button" />
+    <input type="button" value="Enviar" id="botão-clicar" class="button" />
     <p id="contador-texto" class="contador">Você clicou 0 vezes.</p>
     
     <section class="produtos">
@@ -137,16 +133,16 @@
 
      <script>
        let contador = 0;
-       const color = ["#FFCCCC", "#CCE5FF", "#CCFFCC", "#FFFFCC", "#E5CCFF"];
-       let coloratual = 0;
+       const cores = ["#FFCCCC", "#CCE5FF", "#CCFFCC", "#FFFFCC", "#E5CCFF"];
+       let corAtual = 0;
 
-       document.getElementById("botão-clicar").addEventListener("click", funcition () {
+       document.getElementById("botão-clicar").addEventListener("click", function () {
        contador++; 
 
-          document.getElementById("Contador-texto").innerText = `Você clicou ${contador} vez${contador === 1 ? '' : 'es'}.`;
+          document.getElementById("contador-texto").innerText = `Você clicou ${contador} vez${contador === 1 ? '' : 'es'}.`;
 
          if (contador % 10 === 0 )
-         corAtual = (CorAtual + 1) 5 cores.length;
+         corAtual = (corAtual + 1) 5 cores.length;
           document.body.style.backgroundColor = cores[corAtual];
        }
        });
