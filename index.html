@@ -59,7 +59,35 @@
     <i class="fa fa-whatsapp"></i>
     Fale Conosco
   </a>
+<div class="caixa">
+  <h1>Conversor de Moedas</h1>
+  <div class="conversor">
+   
+    <label for="valor">Valor em moeda de origem:</label>
+    <input type="number" id="valor" placeholder="Digite o valor">
 
+   
+    <label for="moeda-origem">De:</label>
+    <select id="moeda-origem">
+      <option value="USD">Dólar (USD)</option>
+      <option value="EUR">Euro (EUR)</option>
+    </select>
+
+    
+    <label for="moeda-destino">Para:</label>
+    <select id="moeda-destino">
+      <option value="BRL">Real (BRL)</option>
+      <option value="USD">Dólar (USD)</option>
+      <option value="EUR">Euro (EUR)</option>
+    </select>
+
+   <button onclick="converterMoeda()">Converter</button>
+
+    <p id="resultado"></p>
+ 
+  
+  </div>
+</div>
    <div class="decoracoes"></div>
 
   <header class="header-site">
